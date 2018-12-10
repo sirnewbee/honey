@@ -169,24 +169,24 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="/assets/js/jqBootstrapValidation.js"></script>
+    <script src="/assets/js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+    <script src="/assets/js/freelancer.min.js"></script>
 
     <!-- getbootstrap -->
-    <script src="js/jquery-3.2.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="<?php echo base_url('/assets/js/jquery-3.2.1.slim.min.js'); ?>"></script>
+    <script src="<?php echo base_url('/assets/js/popper.min.js'); ?>"></script>
+    <script src="<?php echo base_url('/assets/js/bootstrap.min.js'); ?>"></script>
 
   </body>
 
