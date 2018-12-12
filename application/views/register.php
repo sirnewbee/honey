@@ -4,55 +4,38 @@
         <hr class="mb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                <form action="<?php echo base_url('/index.php/Create_account/create_user'); ?>" method="post">
+
                   <label>First Name</label>
-                  <input class="form-control" id="fname" type="text" placeholder="First Name" required="required" data-validation-required-message="Please enter your First Name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" name="firstname" id="firstname" type="text" placeholder="First Name" data-validation-required-message="Please enter your First Name.">
+
                   <label>Last Name</label>
-                  <input class="form-control" id="lname" type="text" placeholder="Last Name" required="required" data-validation-required-message="Please enter your Last Name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" name="lastname" id="lastname" type="text" placeholder="Last Name" data-validation-required-message="Please enter your Last Name.">
+                
                   <label>Password</label>
-                  <input class="form-control" id="pass" type="password" placeholder="Password" required="required" data-validation-required-message="Please enter your password.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" name="password" id="password" type="password" placeholder="Password" data-validation-required-message="Please enter your password.">
+                
                   <label>Password2</label>
-                  <input class="form-control" id="pass2" type="password" placeholder="Re-type password" required="required" data-validation-required-message="Please enter your password again.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" name="password2" id="password2" type="password" placeholder="Re-type password" data-validation-required-message="Please enter your password again.">
+                
                   <label>Email</label>
-                  <input class="form-control" id="email" type="text" placeholder="Email" required="required" data-validation-required-message="Please enter your email">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                  <input class="form-control" name="email" id="email" type="text" placeholder="Email" data-validation-required-message="Please enter your email">
+                
+                  <label>Address</label>
+                  <input class="form-control" name="address" id="address" type="text" placeholder="Address" data-validation-required-message="Please enter your email">
+
                   <label>Birthdate</label>
-                  <input class="form-control" id="email" type="date" placeholder="Birthdate" required="required" data-validation-required-message="Please enter your Birthdate">
-                  <p class="help-block text-danger"></p>
-                </div>
+                  <input class="form-control" name="dob" id="dob" type="date" placeholder="Birthdate" data-validation-required-message="Please enter your Birthdate">
+                
+                  <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Submit</button>
+
+
+                </form>
               </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Submit</button>
-              </div>
-            </form>
+            </div>
+            
           </div>
         </div>
       </div>

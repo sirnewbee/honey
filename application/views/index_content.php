@@ -128,7 +128,7 @@
         <hr class="star-dark mb-5">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+            <form action="<?php echo base_url("/index.php/Account_authentication/get_email") ?>" method="post">
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Email</label>
@@ -150,6 +150,11 @@
               </div>
               <a href="index.php/Welcome/no_account">Dont have an account?</a>
             </form>
+
+            <form action="<?php echo base_url("/index.php/Insert_product/new_product"); ?>" method="post">
+              <input type="submit" value="Insert">
+            </form>
+
           </div>
         </div>
       </div>
