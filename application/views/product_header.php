@@ -13,8 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="author" content="">
 
     <title>Homepage</title>
-
-    <!-- Bootstrap core CSS -->
+ <!-- Bootstrap core CSS -->
     <link href="<?php echo base_url('/assets/vendor/bootstrap/css/bootstrap.min.css') ?>" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
@@ -28,13 +27,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url('/assets/css/freelancer.min.css') ?>" rel="stylesheet">
 
-
   </head>
 
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">home</a>
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,25 +45,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Products</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link py-3 px-0 px-lg-3 " href="#about">About</a>
             </li>            
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php/Welcome/logged_acc">Sign in</a>
+              <a class="portfolio-item d-block mx-auto nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#mycart">My cart</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#logout">Sign out</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  </body>
+</html>
 
-    <!-- Header -->
-    <header class="masthead bg-warning text-white text-center">
-      <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" rc="<?php echo base_url('/assets/img/product.png')?>" alt="">
-        <h1 class="text-uppercase mb-0">Francings Eco Products</h1>
-        <hr class="mb-5">
-        <button>Sign-in </button>
-      </div>
-    </header>

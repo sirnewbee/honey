@@ -126,42 +126,10 @@
             </a>
         </div>
       </div>
-        <div class="text-center">
+      <div class="text-center">
         <button class="btn btn-primary rounded-pill center">Edit Gallery</button>
       </div>
-    </section>
-    <!--  Login Section -->
-    <section id="login">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Welcome</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <form name="sentMessage" id="contactForm" novalidate="novalidate">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email</label>
-                  <input class="form-control" id="email" type="text" placeholder="Email" required="required" data-validation-required-message="Please enter your Email.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Password</label>
-                  <input class="form-control" id="pass" type="password" placeholder="Password" required="required" data-validation-required-message="Please enter your password.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Login</button>
-              </div>
-              <a href="index.php/Welcome/no_account">Dont have an account?</a>
-            </form>
-          </div>
-        </div>
-      </div>
+    </div>
     </section>
 
     <!-- Footer -->
