@@ -7,13 +7,25 @@ class Account_information extends CI_Model{
         parent::__construct();
     }
 
-    public function get_account($data){
+    public function get($data){
+        $query = $this->db->get_where("Accounts" , array("email"=> $data["email"]));
 
-        if($this->db->get_where("Accounts" , array("email"=> $data['email']))){
-            var_dump("success");
+        foreach ($query->result() as $row){
+            if($row->email == $data['email']){
+                if($row->password == $data['password']){
+                    if($row->account_type == 'c'){
+                        $retVal = 'c';
+                    }else{
+                        $retVal = 'a';
+                    }
+                }else{
+                    $retVal = 'i';
+                }
+
+                return $retVal;
+            }
         }
-        
     }
 }
-
+ 
 ?>

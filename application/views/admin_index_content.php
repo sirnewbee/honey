@@ -11,7 +11,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/cabin.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -21,7 +21,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/cake.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -31,7 +31,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/circus.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -41,7 +41,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/game.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/honey.jpg')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -51,7 +51,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/safe.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/img/product.png')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -61,7 +61,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/submarine.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/img/product.png')?>" alt="">
             </a>
           </div>
         </div>
@@ -72,13 +72,13 @@
     <section class="bg-success text-white mb-0" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">About</h2>
-        <hr class="mb-5">
+        <hr class="mb-3">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">This honey business is the best honey business in the world</p>
+            <p class="lead">Honest Honey by Francing’s EcoProducts is wild honey  that is gathered by local honey gatherers from the forests of the Malindang Mountain Range. It is pure honey produced by the apis dorsata spp , commonly known as giant honey bee. These bees are only found in South and Southeast Asia and are known for their aggressive and vicious defense behavior. </p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">They offer great quality honey and the best.</p>
+            <p class="lead">Francing’s EcoProducts is named after the deceased wife of the resident apiculturist (“bee expert”), Evert Jan Robberts, of Sinacaban EcoFarm where Francing’s EcoProducts are produced and packaged. The “Honest” in Honest Honey is to emphasize that the product is pure and has been verified using, among others, the refractory method, to measure its moisture content and thus, its purity.</p>
           </div>
         </div>
         <section class="portfolio">
@@ -101,13 +101,19 @@
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/bee 1.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm1.jpg')?>" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/bee 1.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm2.jpg')?>" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/bee 1.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm4.jpg')?>" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm5.jpg')?>" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm6.jpg')?>" alt="">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -120,44 +126,10 @@
             </a>
         </div>
       </div>
-    </section>
-    <!--  Login Section -->
-    <section id="login">
-      <div class="container">
-        <h2 class="text-center text-uppercase text-secondary mb-0">Welcome</h2>
-        <hr class="star-dark mb-5">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <form action="<?php echo base_url("/index.php/Account_authentication/get_email") ?>" method="post">
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Email</label>
-                  <input class="form-control" name="email" id="email" type="text" placeholder="Email" required="required" data-validation-required-message="Please enter your Email.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                  <label>Password</label>
-                  <input class="form-control" name="password" id="pass" type="password" placeholder="Password" required="required" data-validation-required-message="Please enter your password.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Login</button>
-              </div>
-              <a href="index.php/Welcome/no_account">Dont have an account?</a>
-            </form>
-
-            <form action="<?php echo base_url("/index.php/Insert_product/new_product"); ?>" method="post">
-              <input type="submit" value="Insert">
-            </form>
-
-          </div>
-        </div>
+      <div class="text-center">
+        <button class="btn btn-primary rounded-pill center">Edit Gallery</button>
       </div>
+    </div>
     </section>
 
     <!-- Footer -->
@@ -208,3 +180,4 @@
           </div>
         </div>
       </div>
+

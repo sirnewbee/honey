@@ -13,7 +13,16 @@ class Account_authentication extends CI_Controller{
         $data['email'] = $this->input->post('email');
         $data['password'] = $this->input->post('password');
 
-        $this->account_information->get_account($data);
+        $ret = $this->account_information->get($data);
+
+        if ($ret == 'a'){
+            echo "admin";
+        }else if($ret == 'c'){
+            echo "client";
+        }else{
+            echo "incorrect password";
+        }
+
     }
 }
 
