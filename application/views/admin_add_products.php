@@ -66,21 +66,21 @@
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Product Name</label>
-                  <input class="form-control" id="pname" type="text" placeholder="Product Name" required="required" data-validation-required-message="Please enter name of Product.">
+                  <input class="form-control" name="pname" id="pname" type="text" placeholder="Product Name" required="required" data-validation-required-message="Please enter name of Product.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Product Description</label>
-                  <textarea class="form-control" id="pdesc" type="text" placeholder="Description" required="required" data-validation-required-message="Please enter Product Description."></textarea>
+                  <textarea class="form-control" name="pdesc" id="pdesc" type="text" placeholder="Description" required="required" data-validation-required-message="Please enter Product Description."></textarea>
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
               <div class="control-group">
                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
                   <label>Product Price</label>
-                  <input class="form-control" id="price" type="number" placeholder="Price" required="required" data-validation-required-message="Invalid Price" min="1" step="any">
+                  <input class="form-control" name="price" id="price" type="number" placeholder="Price" required="required" data-validation-required-message="Invalid Price" min="1" step="any">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>

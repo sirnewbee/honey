@@ -4,7 +4,33 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Products</h2>
         <hr class="star-dark mb-5">
-        <div class="row">
+        <style>
+          table, tr, td , th{
+            border: 1px solid black;
+          }
+
+          img{
+            max-width: 50px;
+            max-height: 70px
+          }
+        </style>
+        <table>
+          <tr>
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Inventory</th>
+          </tr>
+          <?php foreach($products as $i){ ?>
+            <tr>
+              <td><?php echo'<img src="' . base_url().'uploads/' . $i->file_name . '">'; ?></td>
+              <td><?php echo $i->product; ?></td>
+              <td><?php echo $i->price; ?></td>
+              <td><?php echo $i->inventory; ?></td>
+            </tr>
+          <?php } ?>
+        </table>
+        <!-- <div class="row">
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -67,7 +93,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
 
     <!-- Footer -->

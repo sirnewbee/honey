@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php/Welcome/logged_acc">Sign in</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php/Transitions/to_login">Sign in</a>
             </li>
           </ul>
         </div>

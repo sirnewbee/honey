@@ -5,6 +5,17 @@
         <h2 class="text-center text-uppercase text-secondary mb-0">Products</h2>
         <hr class="star-dark mb-5">
         <div class="row">
+
+        <?php echo form_open_multipart('Products_controller/do_upload');?>
+          <input type="file" name="userfile" size="20" />
+          <input type="text" name="product" placeholder="Product Name">
+          <input type="text" name="product_description" placeholder="Product Description">
+          <input type="number" name="price" placeholder="Product Price">
+          <input type="number" name="inventory" placeholder="Inventory">
+          
+          <input type="submit" value="upload">
+        </form>
+
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
