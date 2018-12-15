@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }
 
         public function admin_products(){
-            $this->load->view('logged_header');
+            $this->load->view('admin_header');
             $this->load->view('admin_products');
             $this->load->view('footer');
         }

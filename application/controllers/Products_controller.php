@@ -6,6 +6,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             parent::__construct();
 
             $this->load->helper(array('form', 'url'));
+            $this->load->library('session');
 
             $this->load->model('Products_model');
         }
@@ -58,8 +59,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             $data['products'] = $query;
 
+            echo $_SESSION['type'];
+
             $this->load->view('logged_header');
-            $this->load->view('client_products', $data);
+            if( $_SESSION['type'] == 'c'){
+                $this->load->view('client_products', $data);
+            }else{
+                $this->load->view('admin_products', $data);
+            }
+            
             $this->load->view('footer');
         }
     }
