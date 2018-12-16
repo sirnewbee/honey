@@ -4,6 +4,19 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Products</h2>
         <hr class="star-dark mb-5">
+        <div class="row">
+
+        <?php echo form_open_multipart('Products_controller/do_upload');?>
+          <input type="file" name="userfile" size="20" />
+          <input type="text" name="product" placeholder="Product Name">
+          <input type="text" name="product_description" placeholder="Product Description">
+          <input type="number" name="price" placeholder="Product Price">
+          <input type="number" name="inventory" placeholder="Inventory">
+          
+          <input type="submit" value="upload">
+        </form>
+        <br/>
+
         <style>
           table, tr, td , th{
             border: 1px solid black;
@@ -16,26 +29,33 @@
         </style>
         <table>
           <tr>
-            <th></th>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Inventory</th>
+            <th>ID</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Address</th>
+            <th>Birthdate</th>
+            <th>Email</th>
+            <th>Account Type</th>
+            <th>Account Status</th>
           </tr>
-          <?php foreach($products as $i){ ?>
-            <form>
+          <?php foreach($users as $i){ ?>
             <tr>
-              <input type="hidden" name="product_id" value="<?php echo $i->product_id ?>">
-              <td><?php echo'<img src="' . base_url().'uploads/' . $i->file_name . '">'; ?></td>
-              <td><?php echo $i->product; ?></td>
-              <td><?php echo $i->price; ?></td>
-              <td><?php echo $i->inventory; ?></td>
-              <td><input type="submit" value="Add-to-cart"></td>
+              <td><?php echo $i->account_id ?></td>
+              <form action="<?php echo base_url('/index.php/Users_controller/update_users') ?>" method="POST">
+                <td><input type="text" name="firstname" value="<?php echo $i->firstname; ?>"></td>
+                <td><input type="text" name="lastname" value="<?php echo $i->lastname; ?>"></td>
+                <td><input type="text" name="address" value="<?php echo $i->address; ?>"></td>
+                <td><input type="date" name="dob" value="<?php echo $i->dob; ?>"></td>
+                <td><input type="text" name="email" value="<?php echo $i->email; ?>"></td>
+                <td><input type="text" name="account_type" value="<?php echo $i->account_type; ?>"></td>
+                <td><input type="text" name="account_status" value="<?php echo $i->account_status; ?>"></td>
+                <td><input type="Submit" value="Update"></td>
+              </form>
             </tr>
-            </form>
           <?php } ?>
         </table>
-        <!-- <div class="row">
-          <div class="col-md-6 col-lg-4">
+
+          <!-- <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
@@ -99,7 +119,7 @@
       </div>
     </section> -->
 
-
+    
     <!-- Footer -->
 
     <footer class="footer text-center">
@@ -175,62 +195,15 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-uppercase mb-0 text-light">Honest Honey</h2>
               <hr class="star mb-5">
-              <img class="img-fluid mb-5" height="50%" width="50%" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
+              <img class="img-fluid mb-3" height="50%" width="50%" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
+              <!-- Please connect the product price into this -->
+              <p class="mb-2 text-light">{{Price of Product}}</p>
               <p class="mb-5 text-light">Description of Honey will be inputed here.</p>
               <!-- ADD TO CART --> 
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                Add to Cart</a>
+                Close</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- My cart Modal -->
-    <div class="portfolio-modal mfp-hide" id="mycart">
-      <div class="portfolio-modal-dialog">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-uppercase mb-0 text-light">Your Cart</h2>
-              <hr class="sstar mb-5">
-              <div class="mb-5">
-                <table class="table">
-                  <thead class="text-light">
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                    <th>Total</th>
-                    <th> </th>
-                  </thead>
-                  <tbody class="text-light">
-                    <td>
-                      {{image}}
-                    </td>
-                    <td>
-                      {{Quantity}}
-                    </td>
-                    <td>
-                      {{Price}}
-                    </td>
-                    <td>
-                      {{Total}}
-                    </td>
-                    <td>
-                      <a class="btn btn-danger rounded-pill"> Delete </a>
-                    </td>
-                  </tbody>
-                </table>
-              </div>
-              <!-- Checkout --> 
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                Checkout</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
