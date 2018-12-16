@@ -30,6 +30,16 @@ class Account_authentication extends CI_Controller{
         $this->load->view('footer');
 
     }
+
+    public function logout(){
+        if( session_destroy() ){
+            $this->load->view('header');
+            $this->load->view('index_content');
+            $this->load->view('footer');
+        }else{
+            echo "failed";
+        }
+    }
 }
 
 ?>

@@ -24,7 +24,7 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Evert Jan Roberts</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/About/Evert.jpg" alt=""> 
+              <img class="img-fluid mb-5" src="<?php echo base_url('/assets/img/About/Evert.jpeg')?>" alt=""> 
               <p class="mb-5">Founder of the honey farm</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
@@ -45,10 +45,10 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Honey Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Garlic Rich Honey</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cabin.png" alt="">
-              <p class="mb-5">Description of Honey will be inputed here.</p>
+              <img class="img-fluid mb-5" src="<?php echo base_url('/assets/img/products/Product.jpeg')?>" alt="">
+              <p class="mb-5">Honey mixed with garlic</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close</a>
@@ -67,98 +67,10 @@
         <div class="container text-center">
           <div class="row">
             <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Honey Name</h2>
+              <h2 class="text-secondary text-uppercase mb-0">Original Honest Honey</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/cake.png" alt="">
-              <p class="mb-5">Description of Honey will be inputed here.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Modal 3 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Honey Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/circus.png" alt="">
-              <p class="mb-5">Description of Honey will be inputed here.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Modal 4 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Honey Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/game.png" alt="">
-              <p class="mb-5">Description of Honey will be inputed here.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Modal 5 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Honey Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/safe.png" alt="">
-              <p class="mb-5">Description of Honey will be inputed here.</p>
-              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
-                <i class="fa fa-close"></i>
-                Close</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Product Modal 6 -->
-    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
-      <div class="portfolio-modal-dialog bg-white">
-        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
-          <i class="fa fa-3x fa-times"></i>
-        </a>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 class="text-secondary text-uppercase mb-0">Honey Name</h2>
-              <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/submarine.png" alt="">
-              <p class="mb-5">Description of Honey will be inputed here.</p>
+              <img class="img-fluid mb-5" src="<?php echo base_url('/assets/img/products/Product2.jpeg')?>" alt="">
+              <p class="mb-5">The first of our products</p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close</a>
@@ -169,24 +81,24 @@
     </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="/assets/vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="<?php echo base_url('/assets/vendor/jquery/jquery.min.js')?>"></script>
+    <script src="<?php echo base_url('/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
+    "<?php echo base_url('/assets/js/bootstrap.min.js')?>"
     <!-- Plugin JavaScript -->
-    <script src="/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="/assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="<?php echo base_url('/assets/vendor/jquery-easing/jquery.easing.min.js')?>"></script>
+    <script src="<?php echo base_url('/assets/vendor/magnific-popup/jquery.magnific-popup.min.js')?>"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="/assets/js/jqBootstrapValidation.js"></script>
-    <script src="/assets/js/contact_me.js"></script>
+    <script src="<?php echo base_url('/assets/js/jqBootstrapValidation.js')?>"></script>
+    <script src="<?php echo base_url('/assets/js/contact_me.js')?>"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="/assets/js/freelancer.min.js"></script>
+    <script src="<?php echo base_url('/assets/js/freelancer.min.js')?>"></script>
 
     <!-- getbootstrap -->
-    <script src="<?php echo base_url('/assets/js/jquery-3.2.1.slim.min.js'); ?>"></script>
-    <script src="<?php echo base_url('/assets/js/popper.min.js'); ?>"></script>
-    <script src="<?php echo base_url('/assets/js/bootstrap.min.js'); ?>"></script>
+    <script src="<?php echo base_url('/assets/js/jquery-3.2.1.slim.min.js')?>"></script>
+    <script src="<?php echo base_url('/assets/js/popper.min.js')?>"></script>
+    <script src="<?php echo base_url('/assets/js/bootstrap.min.js')?>"></script>
 
   </body>
 

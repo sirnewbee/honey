@@ -26,7 +26,7 @@ class Welcome extends CI_Controller {
 	}
 
 	public function no_account(){
-		$this->load->view('header');
+		$this->load->view('header_register');
 		$this->load->view('register');
 		$this->load->view('footer');
 	}

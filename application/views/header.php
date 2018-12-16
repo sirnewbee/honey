@@ -53,7 +53,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#gallery">Gallery</a>
             </li>
             <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.php/Transitions/to_login">Sign in</a>
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#login">Sign in</a>
             </li>
           </ul>
         </div>
@@ -63,10 +63,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Header -->
     <header class="masthead bg-warning text-white text-center">
       <div class="container">
-        <img class="img-fluid mb-5 d-block mx-auto" src="img/LogoFake.jpg" alt="">
-        <h1 class="text-uppercase mb-0">honest honey</h1>
+        <img class="img-fluid" src="<?php echo base_url('/assets/img/Logo.jpeg')?>" alt="">
         <hr class="mb-5">
-        <h2 class="font-weight-light mb-0">Francing's Eco Products</h2>
-        <button>Sign-in </button>
+        <h1 class="text-uppercase mb-0">francings eco products</h1>
+
       </div>
     </header>

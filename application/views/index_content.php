@@ -11,7 +11,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/cabin.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/products/Product.jpeg')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -21,51 +21,19 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/cake.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/products/Product2.jpeg')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/circus.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/products/Product.jpeg')?>" alt="">
             </a>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/game.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/safe.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/submarine.png')?>" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- About Section -->
@@ -75,10 +43,10 @@
         <hr class="mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">This honey business is the best honey business in the world</p>
+            <p class="lead">Honest Honey by Francing’s EcoProducts is wild honey  that is gathered by local honey gatherers from the forests of the Malindang Mountain Range. It is pure honey produced by the apis dorsata spp , commonly known as giant honey bee. These bees are only found in South and Southeast Asia and are known for their aggressive and vicious defense behavior.</p>
           </div>
           <div class="col-lg-4 mr-auto">
-            <p class="lead">They offer great quality honey and the best.</p>
+            <p class="lead">Francing’s EcoProducts is named after the deceased wife of the resident apiculturist (“bee expert”), Evert Jan Robberts, of Sinacaban EcoFarm where Francing’s EcoProducts are produced and packaged. The “Honest” in Honest Honey is to emphasize that the product is pure and has been verified using, among others, the refractory method, to measure its moisture content and thus, its purity.</p>
           </div>
         </div>
         <section class="portfolio">
@@ -88,7 +56,7 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="<?php echo base_url('/assets/img/About/Evert.jpg')?>" alt="">
+            <img class="img-fluid" src="<?php echo base_url('/assets/img/About/Evert.jpeg')?>" alt="">
           </a>
         </section>
       </div>
@@ -101,13 +69,16 @@
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/bee 1.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery1.jpeg')?>" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/bee 1.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery2.jpeg')?>" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/bee 1.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery3.jpeg')?>" alt="">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery4.jpeg')?>" alt="">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -121,6 +92,7 @@
         </div>
       </div>
     </section>
+
     <!--  Login Section -->
     <section id="login">
       <div class="container">
@@ -147,14 +119,9 @@
               <div id="success"></div>
               <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-xl" id="sendMessageButton">Login</button>
-              </div>
-              <a href="index.php/Welcome/no_account">Dont have an account?</a>
+              </div>  
+              <a href="<?php echo base_url('/index.php/Welcome/no_account') ?>">Dont have an account?</a>
             </form>
-
-            <form action="<?php echo base_url("/index.php/Insert_product/new_product"); ?>" method="post">
-              <input type="submit" value="Insert">
-            </form>
-
           </div>
         </div>
       </div>
@@ -208,3 +175,26 @@
           </div>
         </div>
       </div>
+
+    <!-- About modal -->
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-about">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Evert Jan Roberts</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="<?php echo base_url('/assets/img/About/Evert.jpeg')?>" alt=""> 
+              <p class="mb-5">Founder of the honey farm</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+

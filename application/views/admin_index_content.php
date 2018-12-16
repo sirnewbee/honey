@@ -11,7 +11,7 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/products/Product.jpeg')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -21,61 +21,33 @@
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/products/Product2.jpeg')?>" alt="">
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                 <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
                   <i class="fas fa-search-plus fa-3x"></i>
                 </div>
               </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
+              <img class="img-fluid" src="<?php echo base_url('/assets/img/products/Product.jpeg')?>" alt="">
             </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/honey.jpg')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/img/product.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/portfolio/img/product.png')?>" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
+          </div> 
+    </section>  
+    <form action="<?php echo base_url("/index.php/Products_controller/get_product") ?>" method="post">
+      <div class="form-group text-center">
+              <button type="submit" class="btn btn-danger btn-xl" id="sendMessageButton">Add Product</button>
+          </div> 
+    </form>
     <!-- About Section -->
     <section class="bg-success text-white mb-0" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">About</h2>
-        <hr class="mb-3">
+        <hr class="mb-5">
         <div class="row">
           <div class="col-lg-4 ml-auto">
-            <p class="lead">Honest Honey by Francing’s EcoProducts is wild honey  that is gathered by local honey gatherers from the forests of the Malindang Mountain Range. It is pure honey produced by the apis dorsata spp , commonly known as giant honey bee. These bees are only found in South and Southeast Asia and are known for their aggressive and vicious defense behavior. </p>
+            <p class="lead">Honest Honey by Francing’s EcoProducts is wild honey  that is gathered by local honey gatherers from the forests of the Malindang Mountain Range. It is pure honey produced by the apis dorsata spp , commonly known as giant honey bee. These bees are only found in South and Southeast Asia and are known for their aggressive and vicious defense behavior.</p>
           </div>
           <div class="col-lg-4 mr-auto">
             <p class="lead">Francing’s EcoProducts is named after the deceased wife of the resident apiculturist (“bee expert”), Evert Jan Robberts, of Sinacaban EcoFarm where Francing’s EcoProducts are produced and packaged. The “Honest” in Honest Honey is to emphasize that the product is pure and has been verified using, among others, the refractory method, to measure its moisture content and thus, its purity.</p>
@@ -88,10 +60,15 @@
                 <i class="fas fa-search-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src="<?php echo base_url('/assets/img/About/Evert.jpg')?>" alt="">
+            <img class="img-fluid" src="<?php echo base_url('/assets/img/About/Evert.jpeg')?>" alt="">
           </a>
         </section>
       </div>
+      <form action="<?php echo base_url("/index.php/Products_controller/get_product") ?>" method="post">
+      <div class="form-group text-center">
+              <button type="submit" class="btn btn-danger btn-xl" id="sendMessageButton">Edit</button>
+          </div> 
+    </form>
     </section>
 
     <!-- Gallery Section -->
@@ -101,19 +78,16 @@
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm1.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery1.jpeg')?>" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm2.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery2.jpeg')?>" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm4.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery3.jpeg')?>" alt="">
               </div>
               <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm5.jpg')?>" alt="">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/farm6.jpg')?>" alt="">
+                <img class="d-block w-100 img-fluid" src="<?php echo base_url('/assets/img/Gallery/Gallery4.jpeg')?>" alt="">
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -126,10 +100,11 @@
             </a>
         </div>
       </div>
-      <div class="text-center">
-        <button class="btn btn-primary rounded-pill center">Edit Gallery</button>
-      </div>
-    </div>
+           <form action="<?php echo base_url("/index.php/Products_controller/get_product") ?>" method="post">
+      <div class="form-group text-center">
+              <button type="submit" class="btn btn-danger btn-xl" id="sendMessageButton">Add Image</button>
+          </div> 
+    </form>
     </section>
 
     <!-- Footer -->

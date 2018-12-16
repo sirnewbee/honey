@@ -68,7 +68,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $this->load->view('admin_products', $data);
             }
             
-            $this->load->view('footer');
+            $this->load->view('admin_footer');
         }
     }
 ?>
