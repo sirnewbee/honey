@@ -11,9 +11,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         public function display_users(){
             $data['users'] = $this->Users_model->get_users();
 
-            $this->load->view('logged_header');
+            $this->load->view('admin_header');
             $this->load->view('admin_users' , $data);
-            $this->load->view('footer');
+            $this->load->view('admin_footer');
         }
 
         public function update_users(){

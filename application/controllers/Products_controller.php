@@ -61,14 +61,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
             echo $_SESSION['type'];
 
-            $this->load->view('logged_header');
             if( $_SESSION['type'] == 'c'){
+                $this->load->view('client_header', $data);
                 $this->load->view('client_products', $data);
             }else{
+                $this->load->view('admin_header', $data);
                 $this->load->view('admin_products', $data);
             }
-            
             $this->load->view('admin_footer');
         }
+
+        public function get_gallery(){
+            $this->load->view('logged_gallery');
+            if( $_SESSION['type'] == 'c'){
+                $this->load->view('logged_header');
+                $this->load->view('client_footer');
+            }else{
+                $this->load->view('admin_header');
+                $this->load->view('admin_footer');
+            }
+        }
+
+        public function get_about(){
+            $this->load->view('logged_about');
+            if( $_SESSION['type'] == 'c'){
+                $this->load->view('logged_header');
+                $this->load->view('client_footer');
+            }else{
+                $this->load->view('admin_header');
+                $this->load->view('admin_footer');
+            }
+        }
+
+        public function get_home(){
+            $this->load->view('client_index_content');
+            if( $_SESSION['type'] == 'c'){
+                $this->load->view('logged_header');
+                $this->load->view('client_footer');
+            }else{
+                $this->load->view('admin_header');
+                $this->load->view('admin_footer');
+            }
+        }
+
     }
 ?>

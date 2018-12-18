@@ -4,97 +4,28 @@
       <div class="container">
         <h2 class="text-center text-uppercase text-secondary mb-0">Products</h2>
         <hr class="star-dark mb-5">
-        <style>
-          table, tr, td , th{
-            border: 1px solid black;
-          }
 
-          img{
-            max-width: 50px;
-            max-height: 70px
-          }
-        </style>
-        <table>
-          <tr>
-            <th></th>
-            <th>Product</th>
-            <th>Price</th>
-            <th>Inventory</th>
-          </tr>
+        <table class="table table-hover">
+          <thead>
+            <th scope="col">Product image</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Inventory</th>
+            <th scope="col"></th>
+          </thead>
           <?php foreach($products as $i){ ?>
-            <form>
-            <tr>
-              <input type="hidden" name="product_id" value="<?php echo $i->product_id ?>">
+            <tbody>
+            <tr scope="row">
+              <input type="hidden" name="product_id" scope="row" value="<?php echo $i->product_id ?>">
               <td><?php echo'<img src="' . base_url().'uploads/' . $i->file_name . '">'; ?></td>
               <td><?php echo $i->product; ?></td>
               <td><?php echo $i->price; ?></td>
               <td><?php echo $i->inventory; ?></td>
-              <td><input type="submit" value="Add-to-cart"></td>
+              <td><input class="btn btn-primary" type="submit" value="Add-to-cart"></td>
             </tr>
-            </form>
+            </tbody>
           <?php } ?>
         </table>
-        <!-- <div class="row">
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
-            </a>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                  <i class="fas fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="<?php echo base_url('/assets/img/product.png')?>" alt="">
-            </a>
-          </div>
         </div>
       </div>
     </section> -->
@@ -150,12 +81,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="copyright py-4 text-center text-white">
-      <div class="container">
-        <small>Copyright &copy; Honest Honey 2018</small>
-      </div>
-    </div>
 
     <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
     <div class="scroll-to-top d-lg-none position-fixed ">

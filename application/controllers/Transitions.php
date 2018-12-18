@@ -18,8 +18,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         public function client_products(){
             $this->load->view('logged_header');
             $this->load->view('client_products');
-            $this->load->view('footer');
-        }
+            $this->load->view('client_footer');
+        }   
 
         /*---------------------------ADMIN------------------------- */
 
@@ -34,5 +34,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             $this->load->view('admin_products');
             $this->load->view('footer');
         }
+
     }
 ?>
